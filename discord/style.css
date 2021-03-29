@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template:
+    "left-menu message-list contact-status-bar chat-setting-bar" 50px
+    "left-menu message-list contact-info contact-info" 150px
+    "left-menu message-list chatbox chatbox" 1fr
+    "left-menu account-setting chatbox chatbox" 50px/
+    80px 150px 1fr 250px;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.left-menu {
+  grid-area: left-menu;
+  background-color: rgb(63, 63, 168);
+  color: aliceblue;
+}
+.message-list {
+  grid-area: message-list;
+  background-color: rgb(112, 112, 163);
+  color: aliceblue;
+}
+.contact-status-bar {
+  grid-area: contact-status-bar;
+  background-color: rgb(16, 16, 255);
+  color: aliceblue;
+}
+.chat-setting-bar {
+  grid-area: chat-setting-bar;
+  background-color: rgb(190, 152, 159);
+  color: aliceblue;
+}
+.contact-info {
+  grid-area: contact-info;
+  background-color: rgb(226, 142, 157);
+  color: aliceblue;
+}
+
+.chatbox {
+  grid-area: chatbox;
+  background-color: rgb(148, 45, 64);
+  color: aliceblue;
+}
+
+.account-setting {
+  grid-area: account-setting;
+  background-color: burlywood;
+  color: aliceblue;
+}
