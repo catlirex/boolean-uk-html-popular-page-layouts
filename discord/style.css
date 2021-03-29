@@ -52,3 +52,17 @@
   background-color: burlywood;
   color: aliceblue;
 }
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    grid-template:
+      "left-menu message-list  chat-setting-bar" 50px
+      "left-menu message-list  contact-info" 150px
+      "left-menu message-list chatbox" 1fr
+      "account-setting account-setting  chatbox" 50px/
+      0.5fr 1fr 2fr;
+  }
+  .contact-status-bar {
+    display: none;
+  }
+}

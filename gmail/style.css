@@ -14,6 +14,21 @@
   height: 100vh;
 }
 
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template:
+      "logo      search-bar  search-bar   " 50px
+      "left-menu         main       quick-setting " 300px
+      "left-menu             main       quick-setting " 1fr
+      "chat               right-menu       quick-setting " 50px/
+      50px 2fr 1fr;
+  }
+  .main-menu-button {
+    display: none;
+  }
+}
+
 .logo {
   grid-area: logo;
   background-color: rgb(63, 63, 168);
