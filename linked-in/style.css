@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template:
+    "logo search-bar nav-bar nav-bar" 100px
+    "account-profile main  main linkedin-news" 1fr
+    "account-profile main  main footer" 1fr/
+    100px 1fr 100px;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo {
+  grid-area: logo;
+  background-color: rgb(63, 63, 168);
+  color: aliceblue;
+}
+.search-bar {
+  grid-area: search-bar;
+  background-color: rgb(112, 112, 163);
+  color: aliceblue;
+}
+.nav-bar {
+  grid-area: nav-bar;
+  background-color: rgb(193, 193, 206);
+  color: aliceblue;
+}
+.account-profile {
+  grid-area: account-profile;
+  background-color: rgb(190, 152, 159);
+  color: aliceblue;
+}
+.main {
+  grid-area: main;
+  background-color: rgb(226, 142, 157);
+  color: aliceblue;
+}
+.linkedin-news {
+  grid-area: linkedin-news;
+  background-color: rgb(148, 45, 64);
+  color: aliceblue;
+}
+.footer {
+  grid-area: footer;
+  background-color: rgb(164, 226, 164);
+  color: aliceblue;
+}
