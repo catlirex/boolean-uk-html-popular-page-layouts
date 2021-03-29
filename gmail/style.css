@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template:
+    "main-menu-button logo      search-bar  search-bar   search-bar" 50px
+    "left-menu        left-menu main       quick-setting right-menu" 300px
+    "chat             chat      main       quick-setting right-menu" 1fr/
+    1fr 2fr 5fr 3fr 50px;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo {
+  grid-area: logo;
+  background-color: rgb(63, 63, 168);
+  color: aliceblue;
+}
+.search-bar {
+  grid-area: search-bar;
+  background-color: rgb(112, 112, 163);
+  color: aliceblue;
+}
+.left-menu {
+  grid-area: left-menu;
+  background-color: rgb(193, 193, 206);
+  color: aliceblue;
+}
+.right-menu {
+  grid-area: right-menu;
+  background-color: rgb(190, 152, 159);
+  color: aliceblue;
+}
+.main {
+  grid-area: main;
+  background-color: rgb(226, 142, 157);
+  color: aliceblue;
+}
+
+.main-menu-button {
+  grid-area: main-menu-button;
+  background-color: rgb(148, 45, 64);
+  color: aliceblue;
+}
+
+.quick-setting {
+  grid-area: quick-setting;
+  background-color: burlywood;
+  color: aliceblue;
+}
+
+.chat {
+  grid-area: chat;
+  background-color: turquoise;
+  color: aliceblue;
+}

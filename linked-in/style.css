@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  padding: 0;
 }
 
 .grid-container {
@@ -9,7 +8,7 @@
     "logo search-bar nav-bar nav-bar" 100px
     "account-profile main  main linkedin-news" 1fr
     "account-profile main  main footer" 1fr/
-    100px 1fr 100px;
+    100px 1fr 1fr 100px;
 
   width: 100vw;
   height: 100vh;
