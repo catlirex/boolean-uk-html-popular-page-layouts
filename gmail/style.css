@@ -13,6 +13,27 @@
   width: 100vw;
   height: 100vh;
 }
+.search-bar {
+  display: grid;
+  grid-template:
+    "search-input  help  setting  google-app  account" 50px/
+    1fr 50px 50px 50px 50px;
+}
+
+.main {
+  display: grid;
+  grid-template:
+    "important-email  social-email  sales-email" 80px
+    "email-list email-list email-list" 1fr/
+    150px 1fr 1fr;
+}
+
+.email-list {
+  display: grid;
+  grid-template:
+    "sender subject  receive-time " 1fr/
+    150px 1fr 50px;
+}
 
 @media only screen and (max-width: 600px) {
   .grid-container {
@@ -25,6 +46,22 @@
       50px 2fr 1fr;
   }
   .main-menu-button {
+    display: none;
+  }
+
+  .email-list {
+    display: grid;
+    grid-template:
+      "subject-sender-list  receive-time " 1fr/
+      1fr 50px;
+  }
+  div.subject-sender-list {
+    display: initial;
+  }
+  .sender {
+    display: none;
+  }
+  .subject {
     display: none;
   }
 }
@@ -71,4 +108,60 @@
   grid-area: chat;
   background-color: turquoise;
   color: aliceblue;
+}
+
+.search-input {
+  grid-area: search-input;
+  background-color: purple;
+}
+.help {
+  grid-area: help;
+  background-color: rgb(88, 8, 88);
+}
+.setting {
+  grid-area: setting;
+  background-color: rgb(146, 101, 146);
+}
+.google-app {
+  grid-area: google-app;
+  background-color: rgb(233, 179, 233);
+}
+.account {
+  grid-area: account;
+  background-color: rgb(255, 0, 255);
+}
+
+.important-email {
+  grid-area: important-email;
+  background-color: rgb(130, 240, 130);
+}
+.social-email {
+  grid-area: social-email;
+  background-color: rgb(20, 104, 20);
+}
+.sales-email {
+  grid-area: sales-email;
+  background-color: rgb(4, 48, 4);
+}
+.email-list {
+  grid-area: email-list;
+  background-color: yellowgreen;
+}
+
+.subject {
+  grid-area: subject;
+  background-color: rgb(77, 77, 77);
+}
+.sender {
+  grid-area: sender;
+  background-color: rgb(172, 167, 167);
+}
+.receive-time {
+  grid-area: receive-time;
+  background-color: rgb(43, 43, 43);
+}
+.subject-sender-list {
+  grid-area: subject-sender-list;
+  background-color: rgb(123, 123, 182);
+  display: none;
 }
