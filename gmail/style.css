@@ -39,13 +39,16 @@
   .grid-container {
     display: grid;
     grid-template:
-      "logo      search-bar  search-bar   " 50px
-      "left-menu         main       quick-setting " 300px
-      "left-menu             main       quick-setting " 1fr
-      "chat               right-menu       quick-setting " 50px/
-      50px 2fr 1fr;
+      "logo      search-bar     " 50px
+      "left-menu         main        " 300px
+      "left-menu             main        " 1fr
+      "chat               right-menu        " 50px/
+      50px 2fr;
   }
   .main-menu-button {
+    display: none;
+  }
+  .quick-setting {
     display: none;
   }
 
